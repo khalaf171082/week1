@@ -1,0 +1,70 @@
+
+
+.grid-item:hover 
+{ 
+background-color: #336699;
+color:aliceblue;
+}
+img:hover
+{
+background-color: white;
+}
+.grid-item
+{
+max-width:24.5%;
+display:inline-block;
+overflow:hidden;
+border: groove;
+border-radius: 10%;
+text-align: center;
+vertical-align:top;
+background-color: white;
+}
+img
+{
+width:100%;
+height:auto;
+}
+#grid-flex
+{
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+justify-content: space-around;
+border:solid lightgrey;
+background: #C7C5C5;  
+}
+
+#grid-flex .grid-item:nth-of-type(1),
+#grid-flex .grid-item:nth-of-type(2){
+min-width: 30%;
+border: groove #003366 5px;
+}
+
+@media only screen and (min-width:320px)and (max-width:1600px)
+{
+.grid-item
+{
+max-width:32%;
+}
+#grid-flex .grid-item:nth-of-type(1),
+#grid-flex .grid-item:nth-of-type(2)
+{    
+min-width: 49%;   
+}    
+}
+@media only screen and (max-width:360px)
+{
+.grid-item
+{
+max-width:47%; 
+}
+#grid-flex .grid-item:nth-of-type(1)
+{    
+min-width: 99%;
+}   
+#grid-flex .grid-item:nth-of-type(2)
+{ 
+border: solid lightgrey;
+}
+}
